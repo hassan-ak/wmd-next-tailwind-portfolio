@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <ReduxWrapper>
-          <div className='z-0 box-border flex min-h-screen flex-col overflow-scroll scrollbar scrollbar-track-[#FDA085]/40 scrollbar-thumb-[#F6D365]/80'>
+          <div className='z-0 box-border flex min-h-screen flex-col'>
             <div>
               <Header />
             </div>
