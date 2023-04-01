@@ -1,3 +1,14 @@
+/* Global CSS */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 96px);
+  }
+  .section-height {
+    height: calc(100vh - 97px);
+  }
+}

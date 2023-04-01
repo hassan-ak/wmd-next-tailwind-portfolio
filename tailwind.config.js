@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screens: {
+      'xs': '480px',
+      'sm': '710px',
+      'md': '840px',
+      '2md': '992px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar'),],
 };
