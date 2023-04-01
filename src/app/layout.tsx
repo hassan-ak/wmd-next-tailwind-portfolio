@@ -1,4 +1,6 @@
+// Base Layout
 import './globals.css';
+import ReduxWrapper from '@/components/ReduxWrapper';
 
 export const metadata = {
   title: 'Hassan Ali Khan',
@@ -12,7 +14,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <ReduxWrapper>
+          <div className='z-0 box-border flex min-h-screen flex-col overflow-scroll scrollbar scrollbar-track-[#FDA085]/40 scrollbar-thumb-[#F6D365]/80'>
+           
+            <div className='flex-grow'>{children}</div>
+          </div>
+        </ReduxWrapper>
+      </body>
     </html>
   );
 }
